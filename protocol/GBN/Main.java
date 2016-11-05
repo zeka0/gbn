@@ -38,10 +38,8 @@ public class Main {
             InitReceiver.init_receiver(winSize, maxPktSize, sender_port, receiver_port, data.length, outPath);
         } catch (SocketException e) {
             e.printStackTrace();
-            return;
         } catch (UnknownHostException e) {
             e.printStackTrace();
-            return;
         }
     }
 }

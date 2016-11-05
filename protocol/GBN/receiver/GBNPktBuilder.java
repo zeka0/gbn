@@ -16,7 +16,6 @@ public class GBNPktBuilder {
 
     public void appendData(byte[] buffer){
         for(int i = 0; i < buffer.length; ++i) {
-            //TODO: bug
             if(index + i >= data.length) break;
             data[index + i] = buffer[i];
         }
